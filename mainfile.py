@@ -1,35 +1,39 @@
-oplist = ["+", "-", "*", "/"]
-
-num1 = int(input("Enter first value :"))
-num2 = int(input("Enter second value :"))
-
-
-op = input("Enter Your operation")
-
-if op in oplist[0]:
-    if num1 == 56 and num2 ==9:
-        print("sum is : 77")
+print("1.Addition")
+print("2.Subtraction")
+print("3.Multiplication")
+print("4.Division")
+choice = int(input("Enter ur choice(1/2/3/4:):"))  # choice selection
+# Addition
+if choice == 1:
+    n1 = eval(input("Enter 1st no:"))  # input first number
+    n2 = eval(input("Enter 2st no:"))  # input second number
+    if n1 == 56 and n2 == 9:
+        print("77")
     else:
-        print("sum is :", num1+num2)
+        print(n1 + n2)
 
-elif op in oplist[1]:
-    if num1 == 89 and num2 == 56:
-        print("subtraction is : 865")
+# Subtraction
+elif choice == 2:
+    n1 = eval(input("Enter 1st no:"))  # input first number
+    n2 = eval(input("Enter 2st no:"))  # input second number
+    print(n1 - n2)
+
+# Multiplication
+elif choice == 3:
+    n1 = eval(input("Enter 1st no:"))  # input first number
+    n2 = eval(input("Enter 2st no:"))  # input second number
+    if n1 == 45 and n2 == 3:
+        print("555")
     else:
-        print("subtraction is :",num1-num2) 
+        print(n1 * n2)
 
-elif op in oplist[2]:
-    if num1 == 45 and num2 == 3:
-        print("multiplication is : 555")
+# Division
+elif choice == 4:
+    n1 = eval(input("Enter 1st no:"))  # input first number
+    n2 = eval(input("Enter 2st no:"))  # input second number
+    if n1 == 56 and n2 == 6:
+        print("4")
     else:
-        print("multiplication is :", num1*num2)
-
-
-elif op in oplist[3]:
-    if num1 == 56 and num2 == 6:
-        print("division is : 4")
-    else:
-        print("division is :", num1/num2)
-
+        print(n1 / n2)
 else:
-    print("you have Choose invalid operation ! ")
+    print("Invalid input")
